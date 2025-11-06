@@ -54,6 +54,7 @@ npm install
 npm run dev
 ```
 
+📁 Folder Structure
 src/
 ┣ components/
 ┃ ┣ Header.jsx

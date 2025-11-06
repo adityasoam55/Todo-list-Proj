@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "./components/Header";
 import ToDoList from "./components/ToDoList";
+import Footer from "./components/Footer";
 
 function App() {
   const [todos, setTodos] = useState([]);
@@ -42,7 +43,7 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
       <Header />
-      <div className="w-full max-w-md bg-white shadow-lg rounded-lg p-5 mt-6">
+      <div className="w-full max-w-md bg-white shadow-lg rounded-lg p-5 mt-6 mb-20">
         <div className="flex gap-2 mb-4">
           <input
             type="text"
@@ -65,6 +66,7 @@ function App() {
           editTodo={editTodo}
         />
       </div>
+      <Footer />
     </div>
   );
 }
