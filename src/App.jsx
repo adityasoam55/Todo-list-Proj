@@ -32,6 +32,12 @@ function App() {
     );
   };
 
+  // Edit todo
+  const editTodo = (id, newText) => {
+    setTodos(
+      todos.map((todo) => (todo.id === id ? { ...todo, text: newText } : todo))
+    );
+  };
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6">
@@ -56,6 +62,7 @@ function App() {
           todos={todos}
           deleteTodo={deleteTodo}
           toggleComplete={toggleComplete}
+          editTodo={editTodo}
         />
       </div>
     </div>

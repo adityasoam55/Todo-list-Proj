@@ -1,7 +1,7 @@
 import React from "react";
 import ToDoItem from "./ToDoItem";
 
-function ToDoList({ todos, deleteTodo, toggleComplete }) {
+function ToDoList({ todos, deleteTodo, toggleComplete, editTodo }) {
   return (
     <ul className="space-y-2">
       {todos.length === 0 ? (
@@ -15,6 +15,7 @@ function ToDoList({ todos, deleteTodo, toggleComplete }) {
             todo={todo}
             deleteTodo={deleteTodo}
             toggleComplete={toggleComplete}
+            editTodo={editTodo}
           />
         ))
       )}
