@@ -1,16 +1,63 @@
-# React + Vite
+# 📝 React To-Do List App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and elegant **To-Do List** application built using **React.js** and **Tailwind CSS**.  
+This app allows users to **add**, **edit**, **delete**, and **mark tasks as completed** — demonstrating component-based architecture, state management, and event handling in React.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- ➕ Add new tasks
+- ✅ Mark tasks as completed
+- 🗑️ Delete tasks
+- ✏️ Edit existing tasks
+- ⚡ Instant updates using React state
+- 🎨 Styled completely with Tailwind CSS
+- 💻 Clean, responsive, and user-friendly design
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧩 Components Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Component  | Description                                                       |
+| ---------- | ----------------------------------------------------------------- |
+| `App`      | Manages state and handles main logic (add, edit, delete, toggle). |
+| `Header`   | Displays the app title and description.                           |
+| `ToDoList` | Renders all to-do items dynamically using `map()`.                |
+| `ToDoItem` | Handles individual task actions — complete, edit, delete.         |
+
+---
+
+## 🏗️ Tech Stack
+
+- **React.js (Vite)** – Frontend framework
+- **Tailwind CSS** – Styling
+- **Lucide React** – Icons (Edit, Delete, Save, etc.)
+
+---
+
+## ⚙️ Installation & Setup
+
+Follow these steps to run the project locally:
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/adityasoam55/Todo-list-Proj
+
+# 2. Navigate into the project folder
+cd Todo-list-Proj
+
+# 3. Install dependencies
+npm install
+
+# 4. Start the development server
+npm run dev
+```
+
+src/
+┣ components/
+┃ ┣ Header.jsx
+┃ ┣ ToDoList.jsx
+┃ ┗ ToDoItem.jsx
+┣ App.jsx
+┗ main.jsx
